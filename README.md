@@ -1,0 +1,49 @@
+# NLTKBasics
+Basics from NLTK module for Text recognition and more
+
+# Module 1
+TextRecognition1
+
+1. import nltk and download packages
+2. import all nltk books 
+3. import popular nltk.corpus and
+4. Printing words from different categories 
+5. Printing fileids from different corpus
+
+----------------------------------------------------
+
+American National corpus
+https://www.anc.org/data/masc/downloads/data-download/
+
+Download MASC-3.0.0 zip file 
+
+Twitter data
+\MASC-3.0.0\data\written\twitter
+copy tweets1 text file to jupyter notebook working directory
+
+TextRecognition2 
+1. import nltk and read the twitter1.txt file 
+2. create and abstract object and perform nltk operations 
+
+----------------------------------------------------
+
+Conditional frequency Distribution :-
+TextRecognition3
+1. import books dataset 
+2. Create Frequency distribution
+3. Plot for top 50 distributions 
+4. import Conditional Frequency Distribution 
+5. Plot for 3 letter words freqency distribution for top 20 
+
+--------------------------------------------------
+
+Lexical Resource :  meta-data ( Lexicons )  :- 
+TextRecognition4
+(Stop words)
+cmudict : pronounciation 
+wordnet : dictionary 
+1. Import stopwords 
+2. Check entries 
+3. Find synonyms 
+
+# Module 2
