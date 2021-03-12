@@ -33,5 +33,96 @@ TextRecognition4
 cmudict : pronounciation 
 wordnet : dictionary 
 
+1. Import stopwords 
+2. Check entries 
+3. Find synonyms 
 ------------------------------------------------------------------------------------------------------
 
+Module 2 
+
+Processing raw text with nltk 
+
+pipeline:
+
+Raw String -> Sentence Segmentation -> 	Tokenisation -> Part of Speech Tagging -> Entity Recognition -> Relation Recognition -> Relations(List and Tupples)
+
+Three components :- 
+1. Source 
+2. Pipeline
+3. Outcome
+
+TextRecognition1
+
+1. import nltk 
+2. Add sample text from wikipedia 
+3. Do sentence and word tokenisation 
+4. Part of speech tagging
+5. Named entity recognition 
+
+-------------------------------------
+
+Implementing tokenisation 
+1. define tokenisation - takes sequence of characters and creates tokens of string with each token has a meaning.
+2. Distinguishing between different types of tokenization
+3. Implementing simple tokenizers 
+4. Implementing the Twitter aware tokenizer for social media applications
+
+Steps :-
+1. Add sample text 
+2. Tokenize by import TweetTokenizer from nltk.tokenize
+
+------------------------------------
+
+Regular Expressions 
+1. Defination :- defined the sequence of string to search for data
+2. Build a noun phrase parser 
+3. Named entity recognition(Example of regular expressions ) practice
+
+Noun phase chunking
+
+rule = "NP: {<DT>?<JJ>*<NN>}"
+
+cp = nltk.RegexpParser(rule)
+
+cs = cp.parse(sent)
+
+print(cs)
+
+--------------------------------------
+06/03/2021
+N-gram - combinations of adjacent words or letters of length n in the source text 
+
+n= 1 (Unigram) , n = 2 (Bigram) , n = 3 (Trigram)
+
+Applications :- 
+Autocomplete , Information Retrieval , Text comparison
+
+Parts of Speech :-
+Noun(NN) pronouns(NNP) Verb(VV) Adjectives(JJ) adverbs(RB) DT (Determinant)
+
+Search of parts of speech NLTK tags 
+
+Stop words :- 
+from nltk.corpus import stopwords
+sw = set(stopwords.words('english'))
+
+wordlist = [w for w in wordlist if not w in sw]
+
+bigram = list(nltk.bigrams(word_tokenize(example))
+
+from collections import Counter
+Counter(bigram) - to calculate the frequency of all bigrams 
+
+def find_ngrams(data, n)
+     n_grams =      0         ngrams(nltk.word_tokenize(data),n)
+     return[' '.join(gram) for gram in n_grams]
+
+wordcloud import WordCloud, STOPWORDS
+
+https://regex101.com/
+https://colab.research.google.com/drive/1lVDTihSr9WVorykdGfOQt-5p9t55hD-5
+
+https://colab.research.google.com/drive/1RYgbgmmnJpWSaycRk_UsMbMH6cfmWK_k
+
+
+ 
